@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body{
+    background: #000;
+    position: relative;
+}
+body, ul, li, a, p, h1, h2, h3, h4, h5, h6, button{
+    font-family: 'D-DIN', 'D-DIN Condensed', 'D-DIN Exp', sans-serif;
+    color: #fff;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    background: #000;
+}
+.header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 98;
+}
+.header .nav ul li{
+    display: inline-block;
+    margin: 5px 8px;
+}
+.header .nav ul li a,
+.header .shop ul li{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.header .shop ul{
+    display: flex;
+
+}
+.header .shop ul li{
+    padding: 0 8px;
+}
+.sidenav{
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #000;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    text-align: right;
+    transition: 0.6s;
+}
+.sidenav ul{
+    padding: 80px 70px;
+    position: relative;
+}
+.sidenav ul li a{
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+.sidenav ul li a.close{
+    border-bottom: none;
+}
+.close {
+    position: absolute;
+    top: 18px;
+    right: 78px;
+}
+.crs-23{
+    background: url(img/first.jpg);
+    
+}
+.section{
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.crstext{
+    position: absolute;
+    bottom: 220px;
+}
+.crstext h1{
+    font-size: 40px;
+    line-height: 48px;
+    margin: 10px 0;
+    width: 500px;
+    font-weight: 400;
+}
+.crstext p{
+    width: 500px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.btn a{
+    padding: 20px 50px;
+    margin-top: 35px;
+    border: 1px solid #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn a::after{
+    position: absolute;
+    content: "REWATCH";
+    height: 0;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 60px;
+}
+.btn a:hover::after{
+    background: #fff;
+    color: #000 !important; 
+    height: 100%;
+    z-index: 3;
+}
+
+.transporter{
+    background: url(img/second.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.transporter .crstext{
+    bottom: 100px;
+}
+.starship{
+    background: url(img/third.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.starship .crstext{
+    bottom: 110px;
+}
+.dragon{
+    background: url(img/iss_game.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.dragon .crstext{
+    bottom: 110px;
+}
+footer{
+    background: #000;
+}
+.footer-menu{
+    padding: 40px 0;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: auto;
+    align-items: baseline;
+}
+.footer-menu ul li a{
+    font-size: 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+.footer-menu ul li a:hover{
+    color: #979797;
+    
+}
+.footer-menu ul li:first-child{
+    font-size: 12px;
+    color: #979797;
+}
